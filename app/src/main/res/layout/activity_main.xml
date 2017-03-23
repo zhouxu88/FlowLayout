@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context="com.zx.flowlayout.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="布局文件静态的流式布局"
+        android:layout_marginBottom="16dp"/>
+
+    <com.zx.flowlayout.FlowLayout
+        android:id="@+id/flow_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:childSpacing="auto"
+        app:childSpacingForLastRow="align"
+        app:rowSpacing="16dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/label_bg"
+            android:text="Java"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/label_bg"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Android"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/label_bg"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="OC"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/label_bg"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="PHP"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/label_bg"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="C++"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/label_bg"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="VR"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/label_bg"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Kobe Bryant"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/label_bg"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Jordan"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/label_bg"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="T_MAC"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/label_bg"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Wade"/>
+
+
+
+
+    </com.zx.flowlayout.FlowLayout>
+
+
+    <Button
+        android:id="@+id/dynamic_flow_layout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"
+        android:text="java代码动态生成流式布局"
+        android:layout_marginBottom="16dp"/>
+
+    <com.zx.flowlayout.FlowLayout
+        android:id="@+id/flow_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:childSpacing="auto"
+        app:childSpacingForLastRow="align"
+        app:rowSpacing="16dp"/>
+</LinearLayout>
